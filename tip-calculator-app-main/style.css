@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #c5e4e7;
+    line-height: 1.5;
+    
+}
+
+.grid-container{
+    margin-top: 200px;
+}
+.row{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 32px 20px 32px;
+    border-radius: 30px;
+    margin-bottom: 0px;
+}
+
+.container p{
+    font-size: 15px;
+    font-family: 'Space Mono';
+    font-weight: bolder;
+    
+}
+
+
+.col-1{
+
+}
+
+.col-1 input{
+    margin-bottom: 20px;
+    height: 47px;
+    border-radius: 10px;
+    border: solid;
+    border-color: #58a89d;
+    outline: none;
+}
+
+.bill-input{
+    width: 307px;
+}
+
+input[type="number"] {
+    color: #00474b;
+    font-size: 24px;
+    font-family: 'Space Mono';
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.col-1 p{
+    color: #687a7a;
+}
+
+.col-1 > .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 15px;
+    padding: 20px 0px 20px 0px;
+}
+
+.btn .button{
+    font-family: 'Space Mono';
+    font-size: 24px;
+    height: 48px;
+    background-color: #00474b;
+    color: white;
+    border-radius: 10px;
+    border: solid;
+}
+
+.btn button:hover{
+    background-color: #9fe8df;
+    color: #00474b;
+    border-color: #9fe8df;
+}
+
+.active{
+    background-color: #9fe8df;
+    color: #00474b;
+    font-family: 'Space Mono';
+    font-size: 24px;
+    height: 48px;
+    border-radius: 10px;
+    border: solid;
+    
+}
+
+
+.btn > input{
+    width: 150px;
+    text-align: right;
+}
+
+.btn > input:focus{
+    outline: none;
+}
+
+
+
+.col-2{
+    background-color: #00474b;
+    padding: 30px 30px 0px 30px;
+    border-radius: 30px;
+    color: white;
+    
+
+}
+
+.row-1 , .row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+.col-2 h6{
+    font-family: 'Space Mono';
+    color: #687a7a;
+}
+
+.total-1 , .total-all{
+    
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Space Mono';
+    color: #26c2ad;
+}
+
+.number-of-people {
+    width: 307px;
+}
+
+.reset{
+    margin-top: 39px;
+    margin-bottom: 30px;
+    height: 48px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid;
+    background-color: #26c2ad;
+    border-color: #26c2ad;
+    font-family: 'Space Mono';
+    font-size: 18px;
+    font-weight: bolder;
+    color: #00474b;
+}
+
+.reset:hover{
+    background-color:#9fe8df;
+    border-color: #9fe8df;
+}
+
+@media (min-width: 600px) {
+    .container { grid-template-columns: repeat(2, 1fr); }
+    
+    .col-1 > .btn{
+        padding: 20px 40px 0px 0px;
+        grid-template-columns: repeat(3, 115px);
+    }
+
+    .btn input{
+        width: 115px;
+    }
+
+    .bill-input{
+        width: 377px;
+    }
+
+    .number-of-people {
+        width: 377px;
+    }
+
+}
+
