@@ -7,6 +7,7 @@ const totalOnePerson = document.querySelector('.total-1');
 const totalAll       = document.querySelector('.total-all');
 const customTip      = document.querySelector('[name = custom]');
 const resetbtn       = document.querySelector('.reset');
+const warning        = document.querySelector('.warning-sign');
 let clickedTip = 0;
 
 function calculateBill(e){
@@ -19,10 +20,19 @@ function calculateBill(e){
 
 
     if(totalPeople.length == 0 || totalPeople < 0){
-        alert('null');
+
+        numberOfPeople.style.borderColor  = "red";
+        warning.innerHTML = `This From Cannot be Empty`;
+        warning.style.color = 'red';
+        totalOnePerson.innerHTML = `$0.00`;
+        totalAll.innerHTML = `$0.00`;
+
     } else {
-    const totaltip = ((tipPercentage / 100) * inputBill) / totalPeople;
-   
+
+    numberOfPeople.style.borderColor  = '#58a89d';
+    warning.innerHTML = `Number Of People`;
+    warning.style.color = 'grey';
+    const totaltip = ((tipPercentage / 100) * inputBill) / totalPeople;   
     const totalBillPerson = (inputBill / totalPeople) + totaltip;
 
     totalOnePerson.innerHTML = `$${totaltip.toFixed(2)}`;
