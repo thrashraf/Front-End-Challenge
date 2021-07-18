@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+
+.grid-container h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display";
+}
+
+.grid-container p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca";
+}
+
+.grid-container img {
+  padding: 0px 200px 44px 0px;
+}
+
+.grid-container .row-1 {
+  background-color: #e38826;
+  height: 450px;
+  padding: 40px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.grid-container .row-1 button {
+  width: 130px;
+  padding: 19px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  border: 3px;
+  margin-top: 20px;
+  color: #e38826;
+}
+
+.grid-container .row-2 {
+  background-color: #006970;
+  height: 450px;
+  padding: 40px;
+}
+
+.grid-container .row-2 button {
+  width: 130px;
+  padding: 19px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  border: 3px;
+  margin-top: 20px;
+  color: #006970;
+}
+
+.grid-container .row-3 {
+  background-color: #004241;
+  height: 450px;
+  padding: 40px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.grid-container .row-3 button {
+  width: 130px;
+  padding: 19px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  border: 3px;
+  margin-top: 20px;
+  color: #004241;
+  font-family: "Lexend Deca";
+}
+
+@media all and (min-width: 640px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    margin-top: 50px;
+  }
+  .grid-container h1 {
+    color: #f2f2f2;
+    font-family: "Big Shoulders Display";
+  }
+  .grid-container p {
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Lexend Deca";
+  }
+  .grid-container img {
+    padding: 0px 200px 44px 0px;
+  }
+  .grid-container .row-1 {
+    background-color: #e38826;
+    height: 550px;
+    padding: 43px;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .grid-container .row-1 button {
+    margin-top: 70px;
+  }
+  .grid-container .row-2 {
+    background-color: #006970;
+    height: 550px;
+    padding: 43px;
+  }
+  .grid-container .row-2 button {
+    margin-top: 70px;
+  }
+  .grid-container .row-3 {
+    background-color: #004241;
+    height: 550px;
+    padding: 43px;
+    border-radius: 00px 10px 10px 0px;
+  }
+  .grid-container .row-3 button {
+    margin-top: 70px;
+  }
+}

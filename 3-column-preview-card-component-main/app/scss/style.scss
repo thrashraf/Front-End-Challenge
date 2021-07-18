@@ -1,0 +1,167 @@
+@import "_global";
+@import "_variable";
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+
+    h1{
+        color: $heading-color;
+        font-family: $heading;
+    }
+
+    p{
+        color: $paragraph-color;
+        font-family: $paragraph;
+    }
+
+    img{
+        padding: 0px 200px 44px 0px;
+    }
+
+
+
+
+    .row-1{
+
+        background-color: $background-color1;
+        height: 450px;
+        padding: 40px;
+        border-radius: 10px 10px 0px 0px;  
+        
+        button{
+            width: 130px;
+            padding: 19px;
+            border-radius: 30px;
+            background-color: $heading-color;
+            border: 3px;
+            margin-top: 20px;
+            color: $background-color1;
+            
+        }
+    }
+
+
+    .row-2{
+
+        background-color: $background-color2;
+        height: 450px;
+        padding: 40px;
+
+        button{
+            width: 130px;
+            padding: 19px;
+            border-radius: 30px;
+            background-color: $heading-color;
+            border: 3px;
+            margin-top: 20px;
+            color: $background-color2;
+            
+        }
+       
+    }
+
+    .row-3{
+
+        background-color: $background-color3;
+        height: 450px;
+        padding: 40px;
+        border-radius: 0px 0px 10px 10px;
+
+        button{
+            width: 130px;
+            padding: 19px;
+            border-radius: 30px;
+            background-color: $heading-color;
+            border: 3px;
+            margin-top: 20px;
+            color: $background-color3;
+            font-family: $paragraph;
+            
+        }
+       
+    }
+
+
+
+}
+
+
+@media all and (min-width:640px) {
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        margin-top: 50px;
+    
+        h1{
+            color: $heading-color;
+            font-family: $heading;
+        }
+    
+        p{
+            margin-top: 50px;
+            color: $paragraph-color;
+            font-family: $paragraph;
+        }
+    
+        img{
+            padding: 0px 200px 44px 0px;
+        }
+
+     
+
+        
+        .row-1{
+    
+            background-color: $background-color1;
+            height: 550px;
+            padding: 43px;
+            border-radius: 10px 0px 0px 10px; 
+            
+            button{
+                margin-top: 70px;
+            }
+        }
+    
+    
+        .row-2{
+    
+            background-color: $background-color2;
+            height: 550px;
+            padding: 43px;
+
+            button{
+                margin-top: 70px;
+            }
+           
+        }
+    
+        .row-3{
+    
+            background-color: $background-color3;
+            height: 550px;
+            padding: 43px;
+            border-radius: 00px 10px 10px 0px;
+
+            button{
+                margin-top: 70px;
+            }
+           
+        }
+    
+    
+    
+    }
+    
+}

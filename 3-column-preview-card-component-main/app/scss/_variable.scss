@@ -1,0 +1,20 @@
+
+//colors
+//primary-color
+$background-color1 :   hsl(31, 77%, 52%);
+$background-color2 :   hsl(184, 100%, 22%);
+$background-color3 :   hsl(179, 100%, 13%);
+//neutral-color
+$paragraph-color   :   hsla(0, 0%, 100%, 0.75);
+$heading-color     :   hsl(0, 0%, 95%);
+
+//font
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+$font-size         : 15px;
+$paragraph         :'Lexend Deca';
+$heading         :'Big Shoulders Display';
+
+
