@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: #090b1a;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #1b1938;
+  width: 330px;
+  margin-top: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-container .first-row {
+  background-image: url("/images/image-header-mobile.jpg");
+  width: 330px;
+  background-size: cover;
+  height: 240px;
+}
+
+.grid-container .second-row {
+  padding: 44px 14px 44px 14px;
+  text-align: center;
+}
+
+.grid-container .second-row h1 {
+  font-family: "Inter";
+  margin-bottom: 5;
+}
+
+.grid-container .second-row span {
+  color: #aa5cdb;
+}
+
+.grid-container .second-row p {
+  margin: 0;
+  font-family: "Lexend Deca";
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media all and (min-width: 640px) {
+  .container {
+    background-color: #1b1938;
+    width: 1110px;
+    height: 443px;
+    margin: 177px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid-container .first-row {
+    background-image: url("/images/image-header-mobile.jpg");
+    width: 556px;
+    height: 443px;
+    background-size: cover;
+    grid-column-start: 2;
+  }
+  .grid-container .second-row {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 40px 121px 50px 121px;
+    text-align: start;
+  }
+  .grid-container .second-row h1 {
+    font-family: "Inter";
+    margin-bottom: 5;
+  }
+  .grid-container .second-row span {
+    color: #aa5cdb;
+  }
+  .grid-container .second-row .para {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+  }
+  .grid-container .second-row .para .second {
+    margin: 0px 25px 0px 25px;
+  }
+  .grid-container .second-row .para h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+  .grid-container .second-row p {
+    font-family: "Lexend Deca";
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

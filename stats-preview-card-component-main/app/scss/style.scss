@@ -1,0 +1,165 @@
+@import "_global";
+@import "variable";
+
+.container{
+    background-color: $card-background;
+    width: 330px;
+    margin-top: 100px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    .first-row{
+        background-image: url('/images/image-header-mobile.jpg');
+        width: 330px;
+        background-size: cover;
+        height: 240px;
+    }
+
+    .second-row{
+        padding: 44px 14px 44px 14px;
+            text-align: center;
+    
+            h1{
+                font-family: $heading-font;
+                margin-bottom: 5;
+            }
+    
+            span{
+                color: $accent;
+            }
+    
+            p{
+                margin: 0;
+                font-family: $paragraph-font;
+                color: $stats-heading;
+            }
+    }
+    
+}
+
+
+@media all and (min-width:640px) {
+    
+    .container{
+        background-color: $card-background;
+        width: 1110px;
+        height: 443px;
+        margin: 177px;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    
+    
+        .first-row{
+        background-image: url('/images/image-header-mobile.jpg');
+        width: 556px;
+        height: 443px;
+        background-size: cover;
+        
+        
+       
+        grid-column-start: 2;
+        }
+    
+        .second-row{
+
+            grid-column-start: 1;
+            grid-row-start: 1;
+            padding: 40px 121px 50px 121px;
+            text-align: start;
+            
+            
+            
+        
+                h1{
+                    font-family: $heading-font;
+                    margin-bottom: 5;
+                                      
+                }
+        
+                span{
+                    color: $accent;
+                }
+
+                .para{
+                    margin-top: 30px;
+                    width: 300px;
+                    display: flex;
+
+                    .second{
+                        margin: 0px 25px 0px 25px;
+                    }
+
+                    h1{
+                        font-size: 25px;
+                        margin-bottom: 0px;
+                    }
+
+
+                    
+                }
+
+               
+                p{
+                    
+                    
+                    font-family: $paragraph-font;
+                    color: $stats-heading;
+                    
+                }
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
