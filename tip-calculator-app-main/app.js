@@ -8,18 +8,22 @@ const totalAll       = document.querySelector('.total-all');
 const customTip      = document.querySelector('[name = custom]');
 const resetbtn       = document.querySelector('.reset');
 const warning        = document.querySelector('.warning-sign');
+
 let clickedTip = 0;
+
+
 
 function calculateBill(e){
 
-    const inputBill = bill.value;
-    const tipPercentage = clickedTip;
+    const inputBill = parseInt(bill.value);
+    const tipPercentage = parseInt(clickedTip);
     console.log(tipPercentage);
-    const customPercentage = customTip.value;
-    const totalPeople = numberOfPeople.value;
+    const customPercentage = calCustomtip();
+    console.log(customPercentage);
+    const totalPeople = parseInt(numberOfPeople.value);
 
 
-    if(totalPeople.length == 0 || totalPeople < 0){
+    if(totalPeople < 1 || isNaN(totalPeople)){
 
         numberOfPeople.style.borderColor  = "red";
         warning.innerHTML = `This From Cannot be Empty`;
@@ -32,12 +36,18 @@ function calculateBill(e){
     numberOfPeople.style.borderColor  = '#58a89d';
     warning.innerHTML = `Number Of People`;
     warning.style.color = 'grey';
-    const totaltip = ((tipPercentage / 100) * inputBill) / totalPeople;   
+
+    const totaltip = (((tipPercentage + customPercentage) / 100) * inputBill) / totalPeople;   
     const totalBillPerson = (inputBill / totalPeople) + totaltip;
 
     totalOnePerson.innerHTML = `$${totaltip.toFixed(2)}`;
     totalAll.innerHTML = `$${totalBillPerson.toFixed(2)}`;
+    
+
     }
+
+
+    
 }
 
 function reset(){
@@ -48,17 +58,38 @@ function reset(){
     totalAll.innerHTML = `$0.00`;
 }
 
-function clickButton(){
+function clickButton(e){
 
+    for (const button of buttons) {
         
-    this.classList.contains('button') ? this.classList.replace('button','active') : this.classList.replace('active','button');
+        if (button.classList.contains('active')) {
+            button.classList.remove('active');
+        }
+    }
+    
+    this.classList.add('active');
+    customTip.value = 0;
 
     clickedTip = this.value;
-    
+    return parseInt(clickedTip);
 }
 
+function calCustomtip(){
+    
+    for (const button of buttons) {
+        
+        if (button.classList.contains('active')) {
+            button.classList.remove('active');
+            
+        }
+    }
+    clickedTip = 0;
+    return parseInt(customTip.value);
+
+}
 
 
 buttons.forEach(button => button.addEventListener('click' , clickButton));
 resetbtn.addEventListener('click' , reset);
-numberOfPeople.addEventListener('input' , calculateBill)
+numberOfPeople.addEventListener('input' , calculateBill);
+customTip.addEventListener('click' , calCustomtip);

@@ -94,7 +94,7 @@ input[type="number"] {
     border-color: #9fe8df;
 }
 
-.active{
+.btn .active{
     background-color: #9fe8df;
     color: #00474b;
     font-family: 'Space Mono';
