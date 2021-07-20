@@ -25,11 +25,7 @@ function calculateBill(e){
 
     if(totalPeople < 1 || isNaN(totalPeople)){
 
-        numberOfPeople.style.borderColor  = "red";
-        warning.innerHTML = `This From Cannot be Empty`;
-        warning.style.color = 'red';
-        totalOnePerson.innerHTML = `$0.00`;
-        totalAll.innerHTML = `$0.00`;
+        isEmpty();
 
     } else {
 
@@ -45,9 +41,17 @@ function calculateBill(e){
     
 
     }
-
-
     
+}
+
+
+function isEmpty(){
+
+    numberOfPeople.style.borderColor  = "red";
+    warning.innerHTML = `This From Cannot be Empty`;
+    warning.style.color = 'red';
+    totalOnePerson.innerHTML = `$0.00`;
+    totalAll.innerHTML = `$0.00`;
 }
 
 function reset(){
