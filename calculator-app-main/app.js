@@ -12,7 +12,7 @@ function calculate() {
 
     if ( value == '=') {
         
-        input.value = eval( input.value);
+        input.value = eval( input.value).toFixed(2);
     } else if ( value == 'del') {
         
         input.value =  input.value.slice(0 , -1);
