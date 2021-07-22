@@ -1,0 +1,177 @@
+@import '_global';
+@import '_variable';
+
+header{
+    background-image: url('/images/bg-pattern-top.svg');
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 600px;
+    right: 180px;
+    background-size: cover;
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+
+        width: 325px;
+        height: 375px;
+        margin-top: 237px;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+
+        .background-header{
+
+            height: 140px;
+            width: 325px;
+            background-image: url(/images/bg-pattern-card.svg);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .detail{
+            background-color: white;
+            text-align: center;
+
+            img{
+                border-radius: 50%;
+                border: 6px solid #ffffff;
+                position: relative;
+                bottom: 40px;
+            }
+
+            .bio{
+                position: relative;
+                bottom: 30px;
+                padding-left: 100px;
+                display: grid;
+                grid-template-columns: 100px 40px;
+                
+            }
+
+            h4{
+                margin: 0px;
+                font-family: $heading;
+                
+            }
+
+            p {
+                margin: 0px;
+                font-family: $paragraph;
+                color: $dark-gray;
+            }
+
+            span{
+                position: relative;
+                bottom: 20px;
+            }
+
+        }
+
+        .dashboard {
+
+            border-top: 1px solid $dark-gray;
+            text-align: center;
+            
+            .heading{
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                height: 35px;
+                font-family: $heading;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .component{
+               
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                font-family: $paragraph;
+                color: $dark-gray;
+                font-size: 12px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+           
+        }
+
+    }
+}
+
+footer{
+
+    background-image: url('/images/bg-pattern-bottom.svg');
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    float: right;
+    background-position: left;
+    top: 600px;
+    left: 250px;
+    background-size: cover;
+}
+
+
+
+
+@media all and (min-width:500px) {
+
+    
+    header{
+
+        background-image: url('/images/bg-pattern-top.svg');
+        right: 600px;
+        bottom: 300px;
+        width: 900px;
+        height: 900px;
+
+    }
+
+    main{
+
+        .container {
+
+            width: 350px;
+            height: 400px;
+            margin-top: 150px;
+
+            .background-header{
+
+                height: 140px;
+                width: 350px;
+            }
+
+            .detail{
+
+                width: 350px;
+            }
+
+            .dashboard{
+
+                padding-top: 15px;
+            }
+
+        }
+        
+    }
+
+    footer{
+
+        background-image: url('/images/bg-pattern-bottom.svg');
+        width: 500px;
+        height: 500px;
+        left: 700px;
+        top: 400px;
+        background-position: right;
+        background-position: cover;
+        
+
+    }
+
+}
