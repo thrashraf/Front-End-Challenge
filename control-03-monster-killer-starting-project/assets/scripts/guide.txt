@@ -1,0 +1,12 @@
+const ATTACK_VALUE = 10;
+const STRONG_ATTACK_VALUE = 17;
+const MONSTER_ATTACK = 14;
+const HEAL = 20;
+
+let chosenMaxLife = 100;
+let monsterHealth = chosenMaxLife;
+let currentPlayerHealth = chosenMaxLife;
+
+make 2 function with basic attack & strong attack
+make 1 function attack monster with mode parameter
+function endround 
