@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: #af67e9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  background-color: #ffffff;
+  width: 375px;
+  margin: 150px 10px;
+  border-radius: 10px;
+}
+.container .content-1 {
+  display: grid;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  width: 100%;
+  height: 110px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+.container .content-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  bottom: 120px;
+  right: 10px;
+  position: relative;
+}
+.container .content-2 {
+  margin-top: 0px;
+  padding: 0px 27px 27px 27px;
+  text-align: start;
+  color: #4a4b5e;
+}
+.container .content-2 .faq {
+  border-bottom: 1px solid #ccc;
+}
+.container .content-2 .faq .questionActive {
+  font-weight: bold;
+  color: #4a4b5e;
+}
+.container .content-2 h1 {
+  font-family: Kumbh Sans;
+  text-align: center;
+}
+.container .content-2 p {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+}
+.container .content-2 span {
+  position: relative;
+  bottom: 35px;
+  float: right;
+}
+.container .content-2 .answer {
+  display: none;
+}
+.container .content-2 .showAnswer {
+  display: block;
+}
+
+@media all and (min-width: 640px) {
+  .container .card {
+    width: 920px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container .content-1 {
+    background-image: url("/images/bg-pattern-desktop.svg");
+    height: 450px;
+    background-size: 600px;
+    background-position-x: -250px;
+    background-position-y: -130px;
+  }
+  .container .content-1 img {
+    width: 500px;
+    position: relative;
+    top: 20px;
+    right: 170px;
+  }
+  .container .content-2 {
+    margin-top: 50px;
+  }
+}

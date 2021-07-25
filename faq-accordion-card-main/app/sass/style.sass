@@ -1,0 +1,108 @@
+@import '_globals'
+@import '_variable'
+
+.container 
+    
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .card
+        background-color: #ffffff
+        width: 375px
+        margin: 150px 10px
+        border-radius: 10px
+
+    
+    .content-1
+        display: grid
+        background-image: url('/images/bg-pattern-mobile.svg')
+        width: 100%
+        height: 110px
+        background-repeat: no-repeat
+        position: relative
+        background-position: center
+
+        img
+            display: block
+            margin-left: auto
+            margin-right: auto
+            width: 80%
+            bottom: 120px
+            right: 10px
+            position: relative
+    
+
+    .content-2
+        margin-top: 0px
+        padding: 0px 27px 27px 27px
+        text-align: start
+        color: hsl(237, 12%, 33%)
+        
+
+        .faq
+            border-bottom: 1px solid #ccc
+
+            .questionActive
+                font-weight: bold
+                color: hsl(237, 12%, 33%)
+
+
+        h1
+            font-family: $heading
+            text-align: center
+        
+        p
+            font-family: $paragraph
+            font-size: 14px
+
+        span
+            position: relative
+            bottom: 35px
+            float: right
+
+        .answer
+            display: none
+
+        .showAnswer
+            display: block
+
+
+
+
+
+
+@media all and (min-width:640px)
+
+    .container
+
+        .card
+            
+            width: 920px
+            display: grid
+            grid-template-columns: 1fr 1fr
+    
+        .content-1
+            background-image: url('/images/bg-pattern-desktop.svg')
+            height: 450px
+            background-size: 600px
+            background-position-x: -250px
+            background-position-y: -130px
+            
+            
+
+            img
+                width: 500px
+                position: relative
+                top: 20px
+                right: 170px
+
+        .content-2
+            margin-top: 50px
+        
+       
+    
+    
+
+
+    
