@@ -17,6 +17,7 @@ Below is a list of projects I've completed on Frontend Mentor, categorized by th
 1. **Calculator** - [Live Demo](https://thrashraf.github.io/Calculator/) | [GitHub Repo](https://github.com/thrashraf/Calculator)
 2. **Dice Game 🎲** - [Live Demo](https://thrashraf.github.io/Dice-Game/) | [GitHub Repo](https://github.com/thrashraf/Dice-Game)
 3. **Clock** - [Live Demo](https://thrashraf.github.io/Clock/) | [GitHub Repo](https://github.com/thrashraf/Clock)
+4. **Simon Game** - [Live Demo](https://thrashraf.github.io/Simon-Game/) | [GitHub Repo](https://github.com/thrashraf/Simon-Game)
 
 ## Learning Outcomes
 
